@@ -1,0 +1,138 @@
+.header {
+  box-sizing: border-box;
+
+  width: 20.25rem;
+  height: 100vh;
+
+  padding-top: 3.375rem;
+
+  background-color: var(--background-color);
+
+  border-right: solid 1px var(--outline);
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  .title {
+    .button-light {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+
+      border: none;
+      background: none;
+
+      cursor: pointer;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .logo {
+      width: 12rem;
+      height: 12rem;
+
+      border-radius: 6rem;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      margin-left: 4.125rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .main-title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2.25rem;
+      line-height: 2.625rem;
+      text-align: center;
+
+      color: var(--text-color);
+    }
+
+    .sub-title {
+      font-family: Dancing Script;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      text-align: center;
+    }
+  }
+
+  .navigation {
+    .element {
+      a {
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0rem 1rem;
+
+        width: 100%;
+        height: 100%;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: var(--text-size-large);
+        line-height: 1.75rem;
+
+        .right {
+          svg {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .button-resume {
+    background-color: #5c9dff;
+
+    width: 9.25rem;
+    height: 2.625rem;
+
+    margin-left: 5.5rem;
+
+    border-radius: 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--text-size-large);
+    line-height: 1.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-left: 0.2rem;
+    }
+  }
+
+  .spacer {
+    width: 100%;
+    height: 0px;
+    border-top: solid 1px var(--outline);
+  }
+}

@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script);
+
+:root {
+  --background-color: #f9f9f9;
+  --main-background-color: #f6f6f6;
+  --text-color: #000000;
+  --outline: #cfcfcf;
+
+  --text-size-large: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+svg {
+  color: var(--text-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.window {
+  background: var(--main-background-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  color: var(--text-color);
+
+  svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  img {
+    width: 1em;
+    height: 1em;
+    color: var(--text-color);
+  }
+}
