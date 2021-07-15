@@ -1,0 +1,130 @@
+.contact {
+  margin-left: 7rem;
+  margin-top: 3rem;
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .form {
+    .item {
+      margin-top: 1.5rem;
+
+      h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: var(--text-size-large);
+        line-height: 1.75rem;
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        width: 80%;
+        min-height: 2.5rem;
+        padding: 0.5rem;
+
+        background-color: var(--background-color);
+        border: 1px solid var(--outline);
+
+        font-size: var(--text-size-large);
+      }
+
+      textarea {
+        width: 80%;
+        min-height: 2.5rem;
+        padding: 0.5rem;
+
+        background-color: var(--background-color);
+        border: 1px solid var(--outline);
+
+        font-size: var(--text-size-large);
+      }
+    }
+
+    .last {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .submit-button {
+        background-color: var(--text-color);
+        color: var(--background-color);
+        border-radius: 3px;
+        border: none;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: var(--text-size-large);
+        line-height: 1.75rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        padding: 0.3rem 0.5rem;
+
+        .right {
+          color: var(--background-color);
+          margin-right: 0.5rem;
+
+          width: 1em;
+          height: 1em;
+
+          svg {
+            use {
+              color: var(--background-color);
+            }
+            width: 1em;
+            height: 1em;
+          }
+        }
+
+        .left {
+          color: var(--background-color);
+        }
+      }
+
+      a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: var(--text-size-large);
+        line-height: 1.75rem;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        text-decoration-line: underline;
+
+        .right {
+          margin-left: 0.5rem;
+
+          width: 1em;
+          height: 1em;
+
+          svg {
+            width: 1em;
+            height: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  .small-spacer {
+    border-top: 3px solid var(--text-color);
+    width: 10rem;
+    height: 0;
+  }
+}
