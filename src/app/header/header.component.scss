@@ -93,27 +93,35 @@
   }
 
   .button-resume {
-    background-color: #5c9dff;
-
-    width: 9.25rem;
-    height: 2.625rem;
-
-    margin-left: 5.5rem;
-
-    border-radius: 2px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--text-size-large);
-    line-height: 1.75rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    .icon {
-      vertical-align: -0.5rem;
+    a {
+      padding: 0.5rem 1rem;
+      background-color: #5c9dff;
+
+      border-radius: 2px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: var(--text-size-large);
+      line-height: 1.75rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .left {
+        width: 1em;
+        height: 1em;
+
+        svg {
+          width: 1em;
+          height: 1em;
+        }
+      }
     }
   }
 
