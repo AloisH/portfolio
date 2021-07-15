@@ -1,17 +1,4 @@
 .contact {
-  margin-left: 7rem;
-  margin-top: 3rem;
-
-  h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 4.5rem;
-    line-height: 5.25rem;
-    display: flex;
-    align-items: center;
-  }
-
   .form {
     .item {
       margin-top: 1.5rem;
@@ -120,11 +107,5 @@
         }
       }
     }
-  }
-
-  .small-spacer {
-    border-top: 3px solid var(--text-color);
-    width: 10rem;
-    height: 0;
   }
 }

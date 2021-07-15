@@ -2,13 +2,11 @@
   box-sizing: border-box;
 
   width: 20.25rem;
-  height: 100vh;
+  min-height: 100vh;
 
   padding-top: 3.375rem;
 
   background-color: var(--background-color);
-
-  border-right: solid 1px var(--outline);
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -129,17 +127,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
     color: var(--text-color);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
-    span {
-      margin-left: 0.2rem;
-    }
+    margin-bottom: 0.5rem;
   }
 
   .spacer {
