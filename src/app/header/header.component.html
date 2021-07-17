@@ -1,6 +1,10 @@
 <div class="header">
   <div class="title">
-    <button (click)="changeTheme()" class="button-light">
+    <button
+      (click)="changeTheme()"
+      class="button-light"
+      aria-label="Light and Dark Theme"
+    >
       <svg *ngIf="!isLight; else dark">
         <use xlink:href="assets/icon/sun.svg#icon-sun"></use>
       </svg>
@@ -92,14 +96,24 @@
     <div class="item">
       Alois Heloir | Developer | heloir.alois@live.fr | 2021 |
       <span class="icon">
-        <a href="https://www.linkedin.com/in/alois-heloir/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/alois-heloir/"
+          target="_blank"
+          aria-label="Linkedin Alois Heloir"
+          rel="noopener"
+        >
           <svg>
             <use xlink:href="assets/icon/linkedin.svg#icon-linkedin"></use>
           </svg>
         </a>
       </span>
       <span class="icon">
-        <a href="https://github.com/AloisH" target="_blank">
+        <a
+          href="https://github.com/AloisH"
+          target="_blank"
+          aria-label="Github aloisH"
+          rel="noopener"
+        >
           <svg>
             <use xlink:href="assets/icon/github.svg#icon-github"></use>
           </svg>

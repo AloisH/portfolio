@@ -121,3 +121,9 @@ svg {
   border-radius: 10px;
   border: 1px solid var(--text-color);
 }
+
+@media (max-width: 800px) {
+  .window {
+    overflow: auto;
+  }
+}
