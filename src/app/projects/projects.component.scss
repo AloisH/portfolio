@@ -1,0 +1,43 @@
+.projects {
+  margin-left: 0;
+  overflow: hidden;
+
+  .navigation {
+    margin-top: 9.5rem;
+    margin-bottom: 1rem;
+
+    .item {
+      padding: 1rem 1rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 5rem;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+      }
+
+      .right {
+        position: absolute;
+        color: var(--outline);
+        left: 85%;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6rem;
+        line-height: 7rem;
+        display: flex;
+        align-items: center;
+        text-align: right;
+      }
+    }
+  }
+}

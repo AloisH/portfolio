@@ -8,11 +8,14 @@ import { ContactmeComponent } from './contactme/contactme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ProjectComponent } from './projects/project/project.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: AboutComponent},
   { path: 'contact', component: ContactmeComponent},
-  { path: 'projects', component: ProjectsComponent}
+  { path: 'projects', component: ProjectsComponent},
+  { path: 'projects/:project-name', component: ProjectComponent}
 ]
 
 @NgModule({
@@ -21,12 +24,14 @@ const appRoutes: Routes = [
     HeaderComponent,
     ContactmeComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

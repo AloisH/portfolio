@@ -1,0 +1,107 @@
+@keyframes marque {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: -30%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes marque2 {
+  0% {
+    margin-left: -30%;
+  }
+  50% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -30%;
+  }
+}
+
+.about {
+  overflow: hidden;
+  margin-left: 0;
+
+  .me {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      margin-right: 15rem;
+      img {
+        position: relative;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+      }
+
+      .outline-rect {
+        z-index: 0;
+        position: relative;
+        width: 200px;
+        height: 200px;
+
+        top: -100px;
+        left: 100px;
+
+        border: 1px solid var(--outline);
+      }
+    }
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .item {
+      max-width: calc(100vw - 20.3rem);
+      overflow: hidden;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 5rem;
+      line-height: 6.5rem;
+
+      span {
+        &.first {
+          animation: marque 25s linear infinite;
+        }
+        &.second {
+          animation: marque2 25s linear infinite;
+        }
+
+        &.thrid {
+          animation: marque 30s linear infinite;
+        }
+
+        white-space: nowrap;
+        text-overflow: clip;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .me {
+    flex-direction: column;
+  }
+}

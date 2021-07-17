@@ -1,0 +1,138 @@
+.project {
+  margin-left: 0;
+  margin-top: 0;
+
+  .relative {
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      top: -3.5rem;
+      left: 0;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  .with-margin {
+    margin-top: 3rem;
+  }
+
+  .labels {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 7rem;
+    box-sizing: border-box;
+    display: flex;
+
+    .label {
+      margin-right: 2rem;
+      padding: 0rem 1rem;
+
+      min-width: 5rem;
+
+      background-color: #98e39e;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: var(--text-size-large);
+      line-height: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  .data {
+    max-width: 32rem;
+
+    .description {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.25rem;
+      line-height: 2.7rem;
+    }
+
+    .bottom {
+      margin-top: 3rem;
+      text-align: right;
+
+      .date {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 2.7rem;
+      }
+
+      .source {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: var(--text-size-large);
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+
+    a {
+      display: inline-block;
+    }
+
+    .item {
+      background-color: var(--text-color);
+      color: var(--background-color);
+      border-radius: 3px;
+      border: none;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: var(--text-size-large);
+      line-height: 1.75rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+
+      padding: 0.3rem 0.5rem;
+
+      .right {
+        color: var(--background-color);
+        margin-right: 0.5rem;
+
+        width: 1em;
+        height: 1em;
+
+        svg {
+          use {
+            color: var(--background-color);
+          }
+          width: 1em;
+          height: 1em;
+
+          use {
+            width: 1em;
+            height: 1em;
+
+            svg {
+              width: 1em;
+              height: 1em;
+            }
+          }
+        }
+      }
+
+      .left {
+        color: var(--background-color);
+      }
+    }
+  }
+}
