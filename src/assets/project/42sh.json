@@ -1,0 +1,9 @@
+{
+    "title": "42SH",
+    "description": "42sh is a posix-compliant shell interpretor done in the scope of our ING1 project at EPITA.",
+    "date": "Novembre 2020",
+    "source": false,
+    "labels": [
+        { "name": "C"}
+    ]
+}

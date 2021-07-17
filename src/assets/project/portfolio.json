@@ -1,0 +1,21 @@
+{
+    "title": "PORTFOLIO 2021",
+    "description": "This website is my portfolio.",
+    "date": "July 2021",
+    "source": true,
+    "labels": [
+        {
+            "name": "angular"
+        }, {
+            "name": "figma"
+        }
+    ],
+    "buttons": [
+        {
+            "name": "source code",
+            "icon": "github",
+            "url": "https://github.com/AloisH/portfolio"
+        }
+    ]
+
+}

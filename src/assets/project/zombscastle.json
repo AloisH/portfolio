@@ -1,0 +1,16 @@
+{
+    "title": "ZombsCastle",
+    "description": "Creation of a video game on mobile, available on the Google play Store",
+    "date": "August 2019",
+    "labels": [
+        {"name": "unity"},
+        {"name": "c#"}
+    ],
+    "buttons": [
+        {
+            "name": "playsotre",
+            "icon": "website",
+            "url": "https://play.google.com/store/apps/details?id=com.Heloir.ProjetZombsCastle&hl=fr&gl=US"
+        }
+    ]
+}
