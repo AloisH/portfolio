@@ -38,6 +38,7 @@ svg {
 
 .main {
   display: flex;
+  background: var(--main-background-color);
   flex-direction: row;
 }
 
@@ -47,10 +48,8 @@ svg {
 }
 
 .window {
-  overflow: hidden;
-
   background: var(--main-background-color);
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
 }
 
@@ -120,10 +119,4 @@ svg {
   background-color: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--text-color);
-}
-
-@media (max-width: 800px) {
-  .window {
-    overflow: auto;
-  }
 }
