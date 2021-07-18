@@ -47,6 +47,10 @@ svg {
   border-right: solid 1px var(--outline);
 }
 
+html {
+  background-color: var(--main-background-color);
+}
+
 .window {
   background: var(--main-background-color);
   width: 100%;
@@ -102,7 +106,7 @@ svg {
 }
 
 * {
-  scrollbar-width: auto;
+  scrollbar-width: 16px;
   scrollbar-color: var(--text-color) var(--background-color);
 }
 
