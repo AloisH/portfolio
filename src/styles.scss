@@ -42,11 +42,6 @@ svg {
   flex-direction: row;
 }
 
-.header-page {
-  background-color: var(--background-color);
-  border-right: solid 1px var(--outline);
-}
-
 html {
   background-color: var(--main-background-color);
 }
@@ -123,4 +118,19 @@ html {
   background-color: var(--background-color);
   border-radius: 10px;
   border: 1px solid var(--text-color);
+}
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .page {
+    margin: 3rem 3rem;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
 }

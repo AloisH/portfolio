@@ -4,29 +4,42 @@
   width: 20.25rem;
   min-height: 100vh;
 
-  padding-top: 3.375rem;
-
   background-color: var(--background-color);
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 
-  .title {
-    .button-light {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
+  .top-button {
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    .button-light {
       border: none;
       background: none;
 
       cursor: pointer;
 
       svg {
+        display: block;
         width: 2rem;
         height: 2rem;
       }
     }
+
+    .button-close {
+      display: none;
+    }
+  }
+
+  .title {
+    padding-top: 3.375rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .logo {
       width: 12rem;
@@ -37,7 +50,6 @@
       background-repeat: no-repeat;
       background-size: cover;
 
-      margin-left: 4.125rem;
       margin-bottom: 1.25rem;
     }
 
@@ -137,5 +149,83 @@
     justify-content: flex-end;
 
     margin-bottom: 0.5rem;
+  }
+}
+
+.header-div {
+  height: 100%;
+  background-color: var(--background-color);
+  border-right: solid 1px var(--outline);
+}
+
+.header-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+
+      use {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header-div {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    border-right: none;
+  }
+
+  .header {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+
+  .display-menu {
+    display: block;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .dont-display {
+    display: none;
   }
 }
