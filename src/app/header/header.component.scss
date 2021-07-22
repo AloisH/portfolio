@@ -1,7 +1,5 @@
 .header {
-  box-sizing: border-box;
-
-  width: 20.25rem;
+  width: 21rem;
   min-height: 100vh;
 
   background-color: var(--background-color);
@@ -11,26 +9,10 @@
 
   .top-button {
     margin: 0rem 1rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .button-light {
-      border: none;
-      background: none;
-
-      cursor: pointer;
-
-      svg {
-        display: block;
-        width: 2rem;
-        height: 2rem;
-      }
-    }
-
-    .button-close {
-      display: none;
-    }
   }
 
   .title {
@@ -42,6 +24,8 @@
     align-items: center;
 
     .logo {
+      margin-bottom: 1.25rem;
+
       width: 12rem;
       height: 12rem;
 
@@ -49,22 +33,20 @@
 
       background-repeat: no-repeat;
       background-size: cover;
-
-      margin-bottom: 1.25rem;
     }
 
     .main-title {
       font-weight: 900;
-      font-size: 2.25rem;
-      line-height: 2.625rem;
+      font-size: var(--text-size-large);
+      line-height: var(--text-line-height-large);
       text-align: center;
     }
 
     .sub-title {
       font-family: Dancing Script;
       font-weight: bold;
-      font-size: 1.125rem;
-      line-height: 1.375rem;
+      font-size: var(--text-size-default);
+      line-height: var(--text-line-height-default);
       text-align: center;
     }
   }
@@ -72,20 +54,18 @@
   .navigation {
     .element {
       a {
-        box-sizing: border-box;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         padding: 0rem 1rem;
 
         width: 100%;
         height: 100%;
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         font-weight: bold;
         font-size: var(--text-size-default);
-        line-height: 1.75rem;
+        line-height: var(--text-line-height-default);
 
         .right {
           svg {
@@ -97,48 +77,25 @@
     }
   }
 
-  .button-resume {
+  .btn-pos {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    a {
-      padding: 0.5rem 1rem;
-      background-color: #5c9dff;
-
-      border-radius: 2px;
-
-      font-weight: bold;
-      font-size: var(--text-size-default);
-      line-height: 1.75rem;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .left {
-        width: 1em;
-        height: 1em;
-
-        svg {
-          width: 1em;
-          height: 1em;
-        }
-      }
-    }
   }
 
   .footer {
-    font-weight: normal;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    margin-bottom: 0.5rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 
-    margin-bottom: 0.5rem;
+    font-weight: normal;
+    font-size: var(--text-size-small);
+    line-height: var(--text-line-height-small);
+
+    text-align: center;
   }
 }
 
@@ -150,6 +107,7 @@
 
 .header-mobile {
   display: none;
+
   align-items: center;
   justify-content: space-between;
 
@@ -158,10 +116,8 @@
 
   h1 {
     font-weight: 900;
-    font-size: 1.5rem;
-    line-height: 1.3rem;
-    display: flex;
-    align-items: center;
+    font-size: var(--text-line-height-default);
+    line-height: var(--text-line-height-default);
   }
 
   .menu {
@@ -172,11 +128,6 @@
     svg {
       width: 4rem;
       height: 4rem;
-
-      use {
-        width: 4rem;
-        height: 4rem;
-      }
     }
   }
 }
@@ -197,16 +148,15 @@
 
   .header {
     position: fixed;
+
+    margin-top: 1rem;
+
     width: 100vw;
     height: 100vh;
   }
 
   .header-mobile {
     display: flex;
-  }
-
-  .display-menu {
-    display: block;
   }
 
   .display {

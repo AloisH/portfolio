@@ -14,14 +14,14 @@
 
 <div
   class="header-div"
-  [ngClass]="{ 'dont-display': !menuIsOpen, 'display-menu': menuIsOpen }"
+  [ngClass]="{ 'dont-display': !menuIsOpen, display: menuIsOpen }"
 >
   <div class="header">
     <div class="top-button">
       <div class="left">
         <button
           (click)="changeTheme()"
-          class="button-light"
+          class="btn-icon"
           aria-label="Light and Dark Theme"
         >
           <svg *ngIf="!isLight; else dark">
@@ -37,7 +37,7 @@
       <div class="right">
         <button
           (click)="closeMenu()"
-          class="button-light button-close"
+          class="btn-icon mobile-only"
           aria-label="Close menu"
           [ngClass]="{ 'dont-display': !menuIsOpen, display: menuIsOpen }"
         >
@@ -118,8 +118,8 @@
       <div class="spacer"></div>
     </div>
 
-    <div class="button-resume">
-      <a href="assets/alois.cv.pdf" target="_blank">
+    <div class="btn-pos">
+      <a class="btn btn-blue" href="assets/alois.cv.pdf" target="_blank">
         <div class="left">
           <svg>
             <use xlink:href="assets/icon/download.svg#icon-download"></use>
