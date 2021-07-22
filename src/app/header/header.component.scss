@@ -58,8 +58,6 @@
       font-size: 2.25rem;
       line-height: 2.625rem;
       text-align: center;
-
-      color: var(--text-color);
     }
 
     .sub-title {
@@ -86,7 +84,7 @@
         height: 100%;
 
         font-weight: bold;
-        font-size: var(--text-size-large);
+        font-size: var(--text-size-default);
         line-height: 1.75rem;
 
         .right {
@@ -111,7 +109,7 @@
       border-radius: 2px;
 
       font-weight: bold;
-      font-size: var(--text-size-large);
+      font-size: var(--text-size-default);
       line-height: 1.75rem;
 
       display: flex;
@@ -134,7 +132,6 @@
     font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.75rem;
-    color: var(--text-color);
 
     display: flex;
     flex-direction: column;

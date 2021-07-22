@@ -1,0 +1,29 @@
+/**
+ * @file _variables.scss
+ * @brief Content all the css variable of the project
+ * @author Alois Heloir
+ */
+
+:root {
+  --background-color: #f9f9f9;
+  --main-background-color: #f6f6f6;
+  --text-color: #000000;
+  --outline: #cfcfcf;
+
+  --text-size-default: 1.5rem;
+  --text-size-large: 2.5rem;
+
+  --text-size-title: 4.5rem;
+  --text-line-height-title: 5.25rem;
+}
+
+// Mobile version
+@media (max-width: 800px) {
+  :root {
+    --text-size-default: 1rem;
+    --text-size-large: 2rem;
+
+    --text-size-title: 2.5rem;
+    --text-line-height-title: 2.75rem;
+  }
+}

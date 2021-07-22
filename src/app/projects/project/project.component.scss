@@ -37,7 +37,7 @@
       background-color: #98e39e;
 
       font-weight: bold;
-      font-size: var(--text-size-large);
+      font-size: var(--text-size-default);
       line-height: 2.5rem;
       text-align: center;
     }
@@ -66,7 +66,7 @@
       .source {
         font-style: italic;
         font-weight: 500;
-        font-size: var(--text-size-large);
+        font-size: var(--text-size-default);
       }
     }
   }
@@ -87,7 +87,7 @@
       border: none;
 
       font-weight: bold;
-      font-size: var(--text-size-large);
+      font-size: var(--text-size-default);
       line-height: 1.75rem;
       display: flex;
       align-items: center;

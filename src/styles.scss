@@ -3,14 +3,7 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script);
 
-:root {
-  --background-color: #f9f9f9;
-  --main-background-color: #f6f6f6;
-  --text-color: #000000;
-  --outline: #cfcfcf;
-
-  --text-size-large: 1.5rem;
-}
+@import "./styles/variables";
 
 * {
   margin: 0;
@@ -28,45 +21,11 @@ img {
 }
 
 a {
-  color: var(--text-color);
   text-decoration: none;
-}
-
-svg {
-  color: var(--text-color);
-}
-
-.main {
-  display: flex;
-  background: var(--main-background-color);
-  flex-direction: row;
 }
 
 html {
   background-color: var(--main-background-color);
-}
-
-.window {
-  background: var(--main-background-color);
-  width: 100%;
-  min-height: 100vh;
-}
-
-.icon {
-  vertical-align: middle;
-  display: inline-block;
-  color: var(--text-color);
-
-  svg {
-    width: 1.2em;
-    height: 1.2em;
-  }
-
-  img {
-    width: 1em;
-    height: 1em;
-    color: var(--text-color);
-  }
 }
 
 .page {
@@ -79,8 +38,8 @@ html {
 
   h1 {
     font-weight: bold;
-    font-size: 4.5rem;
-    line-height: 5.25rem;
+    font-size: var(--text-size-title);
+    line-height: var(--text-line-height-title);
     display: flex;
     align-items: center;
   }
@@ -98,37 +57,11 @@ html {
   height: 0;
 }
 
-* {
-  scrollbar-width: 16px;
-  scrollbar-color: var(--text-color) var(--background-color);
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--background-color);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--background-color);
-  border-radius: 10px;
-  border: 1px solid var(--text-color);
-}
-
 @media (max-width: 800px) {
-  .main {
-    flex-direction: column;
-  }
-
   .page {
     margin: 3rem 3rem;
-
-    h1 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-    }
   }
 }
+
+@import "./styles/scrollbar";
+@import "./styles/icon";
