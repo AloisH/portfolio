@@ -1,15 +1,13 @@
-<div class="page project">
-  <div class="relative">
-    <div class="arrow">
-      <a routerLink="/projects">
-        <svg>
-          <use xlink:href="assets/icon/arrow-left.svg#icon-arrow-left"></use>
-        </svg>
-      </a>
-    </div>
-  </div>
+<div class="arrow">
+  <a routerLink="/projects">
+    <svg>
+      <use xlink:href="assets/icon/arrow-left.svg#icon-arrow-left"></use>
+    </svg>
+  </a>
+</div>
 
-  <div class="with-margin">
+<div class="page">
+  <div class="page-margin">
     <h1>{{ data.title }}</h1>
     <div class="small-spacer"></div>
 
@@ -28,7 +26,7 @@
           target="_blank"
           *ngFor="let item of data.buttons"
         >
-          <div class="item">
+          <div class="btn btn-reverse">
             <div class="right">
               <svg>
                 <use

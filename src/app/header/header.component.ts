@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isLight : boolean = true;
+  menuIsOpen : boolean = false;
 
   constructor() { }
 
@@ -34,6 +35,14 @@ export class HeaderComponent implements OnInit {
     document.documentElement.style.setProperty('--main-background-color', "#F6F6F6")
     
     this.isLight = true;
+  }
+
+  openMenu() {
+    this.menuIsOpen = true;
+  }
+
+  closeMenu() {
+    this.menuIsOpen = false;
   }
 
 }

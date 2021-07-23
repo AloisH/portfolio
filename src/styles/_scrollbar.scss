@@ -1,0 +1,24 @@
+/**
+ * @file _scrollbar.scss
+ * @brief Content css to style the scrollbar
+ * @author Alois Heloir
+ */
+
+* {
+  scrollbar-width: 16px;
+  scrollbar-color: var(--text-color) var(--background-color);
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+}

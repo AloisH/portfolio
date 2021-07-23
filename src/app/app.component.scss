@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  background: var(--main-background-color);
+  flex-direction: row;
+}
+
+.window {
+  background: var(--main-background-color);
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}

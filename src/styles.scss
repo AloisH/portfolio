@@ -3,16 +3,15 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script);
 
-:root {
-  --background-color: #f9f9f9;
-  --main-background-color: #f6f6f6;
-  --text-color: #000000;
-  --outline: #cfcfcf;
+@import "./styles/variables";
 
-  --text-size-large: 1.5rem;
+html {
+  background-color: var(--main-background-color);
 }
 
 * {
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -27,100 +26,24 @@ img {
   height: 100%;
 }
 
+svg {
+  width: 1em;
+  height: 1em;
+}
+
 a {
-  color: var(--text-color);
   text-decoration: none;
 }
 
-svg {
-  color: var(--text-color);
+.mobile-only {
+  display: none;
 }
 
-.main {
-  display: flex;
-  background: var(--main-background-color);
-  flex-direction: row;
-}
+@import "./styles/scrollbar";
+@import "./styles/icon";
+@import "./styles/spacer";
+@import "./styles/text";
+@import "./styles/button";
+@import "./styles/label";
 
-.header-page {
-  background-color: var(--background-color);
-  border-right: solid 1px var(--outline);
-}
-
-html {
-  background-color: var(--main-background-color);
-}
-
-.window {
-  background: var(--main-background-color);
-  width: 100%;
-  min-height: 100vh;
-}
-
-.icon {
-  vertical-align: middle;
-  display: inline-block;
-  color: var(--text-color);
-
-  svg {
-    width: 1.2em;
-    height: 1.2em;
-  }
-
-  img {
-    width: 1em;
-    height: 1em;
-    color: var(--text-color);
-  }
-}
-
-.page {
-  margin-left: 7rem;
-  margin-top: 3rem;
-
-  .with-margin {
-    margin-left: 7rem;
-  }
-
-  h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 4.5rem;
-    line-height: 5.25rem;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.spacer {
-  width: 100%;
-  height: 0px;
-  border-top: solid 1px var(--outline);
-}
-
-.small-spacer {
-  border-top: 3px solid var(--text-color);
-  width: 10rem;
-  height: 0;
-}
-
-* {
-  scrollbar-width: 16px;
-  scrollbar-color: var(--text-color) var(--background-color);
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--background-color);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--background-color);
-  border-radius: 10px;
-  border: 1px solid var(--text-color);
-}
+@import "./styles/page";

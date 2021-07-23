@@ -1,0 +1,19 @@
+/**
+ * @file _label.scss
+ * @brief Styling of label
+ * @author Alois Heloir
+ */
+
+.label {
+  margin-right: 2rem;
+  padding: 0rem 1rem;
+
+  min-width: 5rem;
+
+  background-color: #98e39e;
+
+  font-weight: bold;
+  font-size: var(--text-size-default);
+  line-height: 2.5rem;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+/**
+ * @file _spacer.scss
+ * @brief Main style of a page
+ * @author Alois Heloir
+ */
+
+.page-margin {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.page {
+  margin-top: 3rem;
+}
+
+@media (max-width: 800px) {
+  .page-margin {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}

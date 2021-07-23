@@ -1,34 +1,33 @@
 .header {
-  box-sizing: border-box;
-
-  width: 20.25rem;
+  width: 21rem;
   min-height: 100vh;
-
-  padding-top: 3.375rem;
 
   background-color: var(--background-color);
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 
+  .top-button {
+    margin: 0rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .title {
-    .button-light {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
+    padding-top: 3.375rem;
 
-      border: none;
-      background: none;
+    background-color: var(--background-color);
 
-      cursor: pointer;
-
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .logo {
+      margin-bottom: 1.25rem;
+
       width: 12rem;
       height: 12rem;
 
@@ -36,49 +35,41 @@
 
       background-repeat: no-repeat;
       background-size: cover;
-
-      margin-left: 4.125rem;
-      margin-bottom: 1.25rem;
     }
 
     .main-title {
-      font-style: normal;
       font-weight: 900;
-      font-size: 2.25rem;
-      line-height: 2.625rem;
+      font-size: var(--text-size-large);
+      line-height: var(--text-line-height-large);
       text-align: center;
-
-      color: var(--text-color);
     }
 
     .sub-title {
       font-family: Dancing Script;
-      font-style: normal;
       font-weight: bold;
-      font-size: 1.125rem;
-      line-height: 1.375rem;
+      font-size: var(--text-size-default);
+      line-height: var(--text-line-height-default);
       text-align: center;
     }
   }
 
   .navigation {
+    background-color: var(--background-color);
+
     .element {
       a {
-        box-sizing: border-box;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         padding: 0rem 1rem;
 
         width: 100%;
         height: 100%;
 
-        font-style: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         font-weight: bold;
-        font-size: var(--text-size-large);
-        line-height: 1.75rem;
+        font-size: var(--text-size-default);
+        line-height: var(--text-line-height-default);
 
         .right {
           svg {
@@ -90,52 +81,95 @@
     }
   }
 
-  .button-resume {
+  .btn-pos {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    a {
-      padding: 0.5rem 1rem;
-      background-color: #5c9dff;
-
-      border-radius: 2px;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: var(--text-size-large);
-      line-height: 1.75rem;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .left {
-        width: 1em;
-        height: 1em;
-
-        svg {
-          width: 1em;
-          height: 1em;
-        }
-      }
-    }
+    background-color: var(--background-color);
   }
 
   .footer {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
-    color: var(--text-color);
+    margin-bottom: 0.5rem;
+
+    background-color: var(--background-color);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 
-    margin-bottom: 0.5rem;
+    font-weight: normal;
+    font-size: var(--text-size-small);
+    line-height: var(--text-line-height-small);
+
+    text-align: center;
+  }
+}
+
+.header-div {
+  height: 100%;
+  background-color: var(--background-color);
+  border-right: solid 1px var(--outline);
+}
+
+.header-mobile {
+  display: none;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+
+  h1 {
+    font-weight: 900;
+    font-size: var(--text-line-height-default);
+    line-height: var(--text-line-height-default);
+  }
+
+  .menu {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header-div {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    border-right: none;
+  }
+
+  .header {
+    margin-top: 1rem;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+
+  .display {
+    display: block !important;
+  }
+
+  .dont-display {
+    display: none;
   }
 }
