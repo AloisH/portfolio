@@ -6,7 +6,7 @@
     </h1>
   </div>
   <div class="menu" (click)="openMenu()">
-    <svg>
+    <svg viewBox="0 0 16 16">
       <use xlink:href="assets/icon/menu.svg#icon-menu"></use>
     </svg>
   </div>
@@ -24,11 +24,11 @@
           class="btn-icon"
           aria-label="Light and Dark Theme"
         >
-          <svg *ngIf="!isLight; else dark">
+          <svg *ngIf="!isLight; else dark" viewBox="0 0 16 16">
             <use xlink:href="assets/icon/sun.svg#icon-sun"></use>
           </svg>
           <ng-template #dark>
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use xlink:href="assets/icon/moon.svg#icon-moon"></use>
             </svg>
           </ng-template>
@@ -41,7 +41,7 @@
           aria-label="Close menu"
           [ngClass]="{ 'dont-display': !menuIsOpen, display: menuIsOpen }"
         >
-          <svg>
+          <svg viewBox="0 0 16 16">
             <use xlink:href="assets/icon/cross.svg#icon-cross"></use>
           </svg>
         </button>
@@ -63,14 +63,14 @@
         <a routerLink="" class="about-me" (click)="closeMenu()">
           <div class="left">
             <span class="icon">
-              <svg>
+              <svg viewBox="0 0 16 16">
                 <use xlink:href="assets/icon/home.svg#icon-home"></use>
               </svg>
             </span>
             About me
           </div>
           <div class="right">
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use
                 xlink:href="assets/icon/arrow.svg#icon-arrow"
                 (click)="closeMenu()"
@@ -84,14 +84,14 @@
         <a routerLink="/projects" class="projects" (click)="closeMenu()">
           <div class="left">
             <span class="icon">
-              <svg>
+              <svg viewBox="0 0 16 16">
                 <use xlink:href="assets/icon/pencil.svg#icon-pencil"></use>
               </svg>
             </span>
             Projects
           </div>
           <div class="right">
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use xlink:href="assets/icon/arrow.svg#icon-arrow"></use>
             </svg>
           </div>
@@ -102,14 +102,14 @@
         <a routerLink="contact" class="contact" (click)="closeMenu()">
           <div class="left">
             <span class="icon">
-              <svg>
+              <svg viewBox="0 0 16 16">
                 <use xlink:href="assets/icon/message.svg#icon-message"></use>
               </svg>
             </span>
             Contact
           </div>
           <div class="right">
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use xlink:href="assets/icon/arrow.svg#icon-arrow"></use>
             </svg>
           </div>
@@ -120,12 +120,10 @@
 
     <div class="btn-pos">
       <a class="btn btn-blue" href="assets/alois.cv.pdf" target="_blank">
-        <div class="left">
-          <svg>
-            <use xlink:href="assets/icon/download.svg#icon-download"></use>
-          </svg>
-        </div>
-        <div class="right">Resume</div>
+        <svg viewBox="0 0 16 16">
+          <use xlink:href="assets/icon/download.svg#icon-download"></use>
+        </svg>
+        Resume
       </a>
     </div>
 
@@ -139,11 +137,12 @@
             aria-label="Linkedin Alois Heloir"
             rel="noopener"
           >
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use xlink:href="assets/icon/linkedin.svg#icon-linkedin"></use>
             </svg>
           </a>
         </span>
+        |
         <span class="icon">
           <a
             href="https://github.com/AloisH"
@@ -151,7 +150,7 @@
             aria-label="Github aloisH"
             rel="noopener"
           >
-            <svg>
+            <svg viewBox="0 0 16 16">
               <use xlink:href="assets/icon/github.svg#icon-github"></use>
             </svg>
           </a>

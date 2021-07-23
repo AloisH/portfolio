@@ -1,6 +1,6 @@
-
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-menu">
-<path d="M31 38L51 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-<path d="M36 30L51 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-<path d="M41 22L51 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-menu">
+    <path d="M1 15.0001L15 15.0001" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    <path d="M4.5 8.00003L15 8.00003" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    <path d="M8 1L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 </svg>
+        

@@ -1,6 +1,6 @@
 <div class="arrow">
   <a routerLink="/projects">
-    <svg>
+    <svg viewBox="0 0 16 16">
       <use xlink:href="assets/icon/arrow-left.svg#icon-arrow-left"></use>
     </svg>
   </a>
@@ -27,18 +27,14 @@
           *ngFor="let item of data.buttons"
         >
           <div class="btn btn-reverse">
-            <div class="right">
-              <svg>
-                <use
-                  attr.xlink:href="assets/icon/{{ item.icon }}.svg#icon-{{
-                    item.icon
-                  }}"
-                ></use>
-              </svg>
-            </div>
-            <div class="left">
-              {{ item.name }}
-            </div>
+            <svg viewBox="0 0 16 16">
+              <use
+                attr.xlink:href="assets/icon/{{ item.icon }}.svg#icon-{{
+                  item.icon
+                }}"
+              ></use>
+            </svg>
+            {{ item.name }}
           </div>
         </a>
       </div>

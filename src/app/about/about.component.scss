@@ -23,18 +23,31 @@
 }
 
 .me {
-  margin-top: 3rem;
+  margin: 3rem 0rem;
 
   display: flex;
   justify-content: space-between;
 
   .left {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     font-weight: normal;
     font-size: var(--text-size-default);
     line-height: var(--text-line-height-default);
+
+    .buttons {
+      margin: 1rem 0rem;
+
+      width: 100%;
+
+      display: flex;
+
+      .btn {
+        margin-right: 1rem;
+      }
+    }
   }
 
   .right {

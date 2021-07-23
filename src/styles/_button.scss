@@ -25,10 +25,6 @@
     width: 1em;
     height: 1em;
   }
-
-  .right {
-    margin-right: 0.5rem;
-  }
 }
 
 .btn-icon {
@@ -48,16 +44,10 @@
   background-color: var(--text-color);
   color: var(--background-color);
 
-  .right {
-    color: var(--background-color);
-
+  svg {
     use {
       color: var(--background-color);
     }
-  }
-
-  .left {
-    color: var(--background-color);
   }
 }
 
