@@ -1,4 +1,5 @@
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-cross">
-<path d="M2 2L18 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-<path d="M18 2L2 18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-cross">
+    <path d="M1 1L14 14" stroke="currentColor" stroke-linecap="round" />
+    <path d="M14 1L1 14" stroke="currentColor" stroke-linecap="round" />
 </svg>
+        

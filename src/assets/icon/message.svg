@@ -1,4 +1,5 @@
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" id="icon-message">
-<rect x="5.33331" y="8" width="21.3333" height="16" rx="2" stroke="currentColor"/>
-<path d="M5.33331 12L15.1056 16.8861C15.6686 17.1676 16.3314 17.1676 16.8944 16.8861L26.6666 12" stroke="currentColor"/>
+    <rect x="2.66675" y="4" width="10.6667" height="8" rx="2" stroke="currentColor" />
+    <path d="M2.66675 6L7.10565 8.21945C7.66871 8.50098 8.33145 8.50098 8.89451 8.21945L13.3334 6" stroke="currentColor" />
 </svg>
+    
