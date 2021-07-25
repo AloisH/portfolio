@@ -24,7 +24,7 @@
           class="btn-icon"
           aria-label="Light and Dark Theme"
         >
-          <svg *ngIf="!isLight; else dark">
+          <svg *ngIf="!isLightMode(); else dark">
             <use xlink:href="assets/icon/sun.svg#icon-sun"></use>
           </svg>
           <ng-template #dark>

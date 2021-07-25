@@ -1,40 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  isLight : boolean = true;
-  menuIsOpen : boolean = false;
+  menuIsOpen: boolean = false;
 
-  constructor() { }
+  constructor(private themeService: ThemeService) {}
 
-  ngOnInit(): void {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      this.changeTheme();
-    }
+  ngOnInit(): void {}
+
+  isLightMode() {
+    return this.themeService.isLight;
   }
 
   changeTheme() {
-
-    if (this.isLight) {
-      document.documentElement.style.setProperty('--background-color', '#000000');
-      document.documentElement.style.setProperty('--text-color', '#FDFDFD');
-      document.documentElement.style.setProperty('--outline', '#C4C4C4');
-      document.documentElement.style.setProperty('--main-background-color', "#0C0C0C")
-
-      this.isLight = false;
-      return;
-    }
-
-    document.documentElement.style.setProperty('--background-color', '#F9F9F9');
-    document.documentElement.style.setProperty('--text-color', '#000000');
-    document.documentElement.style.setProperty('--outline', '#CFCFCF');
-    document.documentElement.style.setProperty('--main-background-color', "#F6F6F6")
-    
-    this.isLight = true;
+    this.themeService.changeTheme();
   }
 
   openMenu() {
@@ -44,5 +28,4 @@ export class HeaderComponent implements OnInit {
   closeMenu() {
     this.menuIsOpen = false;
   }
-
 }
