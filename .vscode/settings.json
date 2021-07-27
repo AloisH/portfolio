@@ -6,7 +6,7 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/karma.conf.js": true,
-        "**/angular.json": true,
+        "**/angular.json": false,
         "**/package-lock.json": true,
         "**/package.json": true,
         "**/tsconfig.app.json": true,
