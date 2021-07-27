@@ -60,6 +60,7 @@ export class ThemeService {
         '--main-background-color',
         '#F6F6F6'
       );
+      document.documentElement.style.setProperty('--button-blue', '#5c9dff');
     } else {
       document.documentElement.style.setProperty(
         '--background-color',
@@ -71,6 +72,7 @@ export class ThemeService {
         '--main-background-color',
         '#0C0C0C'
       );
+      document.documentElement.style.setProperty('--button-blue', '#337ce9');
     }
   }
 }
