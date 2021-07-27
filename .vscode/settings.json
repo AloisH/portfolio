@@ -15,7 +15,7 @@
         "**/.gitignore": true,
         "**/.browserslistrc": true,
         "**/.editorconfig": true,
-        "**/.htaccess": true,
+        "**/.htaccess": false,
         "**/dist": true,
         "**/node_modules": true,
         "**/polyfills.ts": true,
