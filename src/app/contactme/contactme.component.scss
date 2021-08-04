@@ -1,3 +1,18 @@
+.mail-sended {
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+
+  background-color: var(--text-color);
+  color: var(--main-background-color);
+
+  font-size: var(--text-size-default);
+  font-weight: 900;
+  text-align: center;
+
+  border: 3px solid lightgreen;
+  border-radius: 1rem;
+}
+
 .form-elt {
   margin-top: 1.5rem;
 
@@ -16,6 +31,10 @@
     border: 1px solid var(--outline);
 
     font-size: var(--text-size-default);
+
+    &.ng-touched.ng-invalid {
+      border: 1px solid red;
+    }
   }
 }
 
@@ -23,6 +42,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  button {
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
 
   a {
     display: flex;

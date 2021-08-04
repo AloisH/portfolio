@@ -12,14 +12,15 @@ import { ProjectComponent } from './projects/project/project.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
-  { path: '', component: AboutComponent},
-  { path: 'contact', component: ContactmeComponent},
-  { path: 'projects', component: ProjectsComponent},
-  { path: 'projects/:project-name', component: ProjectComponent},
-  { path: '**', component: AboutComponent}
-]
+  { path: '', component: AboutComponent },
+  { path: 'contact', component: ContactmeComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'projects/:project-name', component: ProjectComponent },
+  { path: '**', component: AboutComponent },
+];
 
 @NgModule({
   declarations: [
@@ -28,21 +29,22 @@ const appRoutes: Routes = [
     ContactmeComponent,
     ProjectsComponent,
     AboutComponent,
-    ProjectComponent
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    })
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

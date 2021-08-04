@@ -5,26 +5,35 @@
   </h1>
   <div class="small-spacer"></div>
 
-  <form action="https://formspree.io/f/mdoylzpp" method="POST">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div>
       <div class="form-elt">
         <h3>Email Address *</h3>
-        <input type="text" name="_replyto" />
+        <input type="text" name="_replyto" ngModel required email="true" />
       </div>
 
       <div class="form-elt">
         <h3>Subject *</h3>
-        <input type="text" name="_subject" />
+        <input type="text" name="_subject" ngModel required />
       </div>
 
       <div class="form-elt">
         <h3>Message *</h3>
-        <textarea name="message" cols="30" rows="10"></textarea>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          ngModel
+          required
+          minlength="5"
+        ></textarea>
       </div>
+
+      <div class="mail-sended" *ngIf="mailSended">Email send !</div>
 
       <div class="form-elt last">
         <div class="left">
-          <button class="btn btn-reverse" type="submit">
+          <button class="btn btn-reverse" type="submit" [disabled]="!f.valid">
             <svg>
               <use xlink:href="assets/icon/export.svg#icon-export"></use>
             </svg>
