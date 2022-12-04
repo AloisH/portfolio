@@ -6,9 +6,9 @@ services:
       - 80:80
       - 443:433
     volumes:
-      - ./data:nginx:/etc/nginx/conf.d
+      - ./data/nginx:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/ww:/var/www/certbot
+      - ./data/certbot/www:/var/www/certbot
     command: "/bim/sh -c 'while true; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
   certbot:
     image: certbot/certbot
