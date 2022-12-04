@@ -9,6 +9,6 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:1.23.2-alpine
+FROM nginx:1.15-alpine
 WORKDIR /app
 COPY --from=build-stage /app/dist/portfolio /app
